@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --overpass: "Overpass", sans-serif;
+}
+
+body {
+  background-color: #141519;
+  font-family: var(--overpass);
+}
+
+main {
+  background: radial-gradient(at top, #29303b, #141b24);
+  border-radius: 6%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 22rem;
+  width: 22rem;
+  padding: 2.3rem;
+}
+
+button {
+  border-style: none;
+}
+
+.star,
+.ratings-btn {
+  border-radius: 50%;
+  background-color: #262f38;
+  position: relative;
+}
+
+.star svg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.question p {
+  color: #6d7582;
+  font-size: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.ratings-btn,
+.star {
+  color: #6d7582;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--overpass);
+}
+
+.submit button {
+  width: 100%;
+  padding: 12px;
+  font-family: var(--overpass);
+  color: white;
+  border-radius: 50px;
+  background-color: #fc7614;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.submit button:hover {
+  transition: 400ms;
+  background-color: white;
+  color: #fc7614;
+
+  cursor: pointer;
+}
+
+.ratings-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #fc7614;
+  transition: 200ms;
+}
+
+.active {
+  color: white;
+  background-color: #7c8898;
+}
+
+/* SECOND MAIN */
+
+.selected {
+  display: none;
+}
+
+.illustration,
+.selected-rating {
+  display: grid;
+  justify-items: center;
+}
+
+.selected-rating button {
+  background-color: #262f38;
+  color: #fc7614;
+  width: auto;
+  text-align: center;
+  border-radius: 30px;
+  font-family: var(--overpass);
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  margin-top: 2rem;
+}
+
+.selected-text {
+  text-align: center;
+}
+
+.selected-text h1 {
+  color: white;
+}
+
+.selected-text p {
+  color: #6d7582;
+}
